@@ -5,14 +5,25 @@
     font-family: 'Lora', serif;
 }
 
-header {
-    background: linear-gradient(to bottom, #000000,  #167cb4);
-    color: white;
-    padding: 15px 20px;
-
+body{
+    background-image: url(./sources/fondo.png);
+    background-size: cover;                
+    background-repeat: no-repeat;          
+    background-position: center;           
+    background-attachment: fixed;          
+    margin: 0;
 }
 
+header {
+    background: linear-gradient(to bottom, #472824,  #735951);
+    color: white;
+    padding: 15px 20px;
+    position:sticky;
+    z-index: 1000;
+    top: 0;
+    backdrop-filter: blur(10px);
 
+}
 
 header h1 {
     display: flex;
@@ -23,10 +34,10 @@ header h1 {
     background: linear-gradient(
         90deg, 
         #fbf9f9 0%,
-        #eeeeee 40%,
-        #0210ac 50%,
-        #5048e2 60%,
-        #f4f3f3 100%
+        #472825 40%,
+        #D3AB80 50%,
+        #FDE4BC 60%,
+        #D3AB80 100%
     );
     background-size: 200%;
     background-position: -100%;
@@ -55,13 +66,35 @@ header h1 {
 
 
 .headers a {
-    color:#F2EDE7;
+    color:#FFF4E2;
     margin-right: 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav a:hover {
+.headers a:hover {
     text-decoration: underline;
-    color: #000279;
+    color: #FDE4BC;
+}
+
+.container{
+     color:#FFF4E1;
+     display: flex;
+     margin: 5%;
+     padding: 2%;
+     background-color:#af654e;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.lefth{
+    text-align: right;
+
+}
+
+footer{
+    margin: 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
 }
