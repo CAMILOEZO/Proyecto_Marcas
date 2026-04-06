@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Primeros Pasos</title>
+    <script src="../src/sistemas.js"></script>
 </head>
 <body>
     <header>
@@ -14,13 +15,39 @@
         <a href="programacion.html">Programacion</a>
         <a href="basesDedatos.html">Bases de datos</a>
         <a href="sistemas.html">Sistemas</a>
-        <a href="redes.html"> Redes</a>
-        <a href="ciber.html">Ciber</a>
     </nav>
     </header>
     
     <main>
-       
+       <div class="separate-container">
+    <section>
+        <h2>Sistemas Operativos</h2>
+        <p>
+            El Sistema Operativo (SO) es el <strong>director de orquesta</strong> de tu ordenador. Su trabajo es decidir qué programa puede usar el "cerebro" (CPU) y cuánta "memoria de corto plazo" (RAM) le toca a cada uno para que nada explote.
+        </p>
+
+        <div class="monitor-sistema">
+            <div class="recurso">
+                <span>Uso de CPU:</span>
+                <div class="barra-progreso"><div id="barra-cpu" class="llenado"></div></div>
+            </div>
+            <div class="recurso">
+                <span>Uso de RAM:</span>
+                <div class="barra-progreso"><div id="barra-ram" class="llenado"></div></div>
+            </div>
+        </div>
+
+        <div class="gestion-procesos">
+            <button class="boton-bonito" onclick="lanzarProceso('Navegador', 15, 20)">Abrir Navegador</button>
+            <button class="boton-bonito" onclick="lanzarProceso('Juego RPG', 40, 50)">Abrir Juego</button>
+            <button class="boton-bonito" onclick="lanzarProceso('Música', 5, 10)">Abrir Spotify</button>
+            <button class="boton-bonito" style="background-color: #ffcccc;" onclick="reiniciarSistema()">Formatear PC</button>
+        </div>
+
+        <div id="lista-procesos" class="contenedor-objetos">
+            </div>
+    </section>
+</div>
 
     </main>
     <footer>

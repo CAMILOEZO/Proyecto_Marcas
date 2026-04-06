@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Primeros Pasos</title>
+    <script src="../src/basesdedatos.js"></script>
 </head>
 <body>
     <header>
@@ -14,13 +15,38 @@
         <a href="programacion.html">Programacion</a>
         <a href="basesDedatos.html">Bases de datos</a>
         <a href="sistemas.html">Sistemas</a>
-        <a href="redes.html"> Redes</a>
-        <a href="ciber.html">Ciber</a>
+
     </nav>
     </header>
     
     <main>
-        
+
+<div class="separate-container">
+    <section>
+        <h2>Base de Datos (Simulador API + SQL)</h2>
+        <p>
+            En esta sección, vamos a conectar con una API externa para obtener una "tabla" de usuarios. 
+            Podrás filtrar los datos como si estuvieras haciendo un <code>SELECT * FROM usuarios WHERE...</code>
+        </p>
+
+        <div class="controles-db">
+            <button class="boton-bonito" onclick="obtenerUsuarios()">Cargar Tabla (FETCH)</button>
+            <input type="text" id="input-busqueda" class="input-moderno" placeholder="Filtrar por nombre...">
+            <button class="boton-bonito" onclick="simularSQL()">Ejecutar Query</button>
+        </div>
+
+        <div id="tabla-contenedor" class="tabla-scroll">
+            <table id="tabla-usuarios">
+                <thead>
+                    <tr id="cabecera-tabla">
+                        </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                    </tbody>
+            </table>
+        </div>
+    </section>
+</div>
 
     </main>
     <footer>

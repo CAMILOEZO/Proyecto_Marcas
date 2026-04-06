@@ -15,8 +15,7 @@
         <a href="programacion.html">Programacion</a>
         <a href="basesDedatos.html">Bases de datos</a>
         <a href="sistemas.html">Sistemas</a>
-        <a href="redes.html"> Redes</a>
-        <a href="ciber.html">Ciber</a>
+
     </nav>
     </header>
     
@@ -80,17 +79,108 @@
                     para ellos."
                 </p>
 
+                <center> <img src="https://tecnitium.com/wp-content/uploads/2022/11/image-2.png" alt="flujo de datos"> </center>
+
+
             </section>
 
             <section>
+                <h3>
+                    Ejemplo
+                </h3>
+                <p>
+                    Ahora veremos un ejemplo claro de la toma de decisiones, lo cual representaria el funcionamiento y 
+                    el flujo de un programa segun la toma de desiciones del usuario.
+                </p>
+
+                    <div id="contenedor-juego">
+                        <button id="btn-empezar" class="boton-bonito">Empezar</button>
+
+                        <div id="area-juego" style="display: none;">
+                            <h3 id="texto-pregunta"></h3>
+                            <div id="botones-decision">
+                            <button id="btn-si" class="boton-bonito">Sí</button>
+                            <button id="btn-no" class="boton-bonito">No</button>
+                            </div>
+                        </div>
+
+                        <div id="area-conclusion" style="display: none;">
+                            <h3 id="texto-conclusion"></h3>
+                        </div>
+                    </div>
 
    
             </section>
 
-
-
          </div>
+                    <div class="separate-container">
+                <section>
+                    <h2>Bucles (Loops)</h2>
+                    <p>
+                        Si los condicionales eran el "libre albedrío", los bucles son el <strong>superpoder de la repetición</strong>. 
+                        Imagina que tienes que escribir "No volveré a tirar aviones de papel" 100 veces en la pizarra. 
+                        Un programador no lo escribe 100 veces; crea un bucle que lo haga por él.
+                    </p>
+
+                    <div class="explicacion-bucles">
+                        <p><strong>For:</strong> Lo usas cuando sabes <em>exactamente</em> cuántas veces quieres repetir algo (ej. dar 10 vueltas a la pista).</p>
+                        <p><strong>While:</strong> Lo usas cuando quieres repetir algo <em>mientras</em> ocurra una condición, sin saber cuándo parará (ej. correr hasta que te canses).</p>
+                    </div>
+
+                    <div id="demo-bucles">
+                        <h3>Consola de Repetición</h3>
+                        <p>Elige un bucle para ver cómo funciona en tiempo real:</p>
+                        
+                        <button class="boton-bonito" onclick="ejecutarFor()">Ejecutar For (Contar 1 al 5)</button>
+                        <button class="boton-bonito" onclick="ejecutarWhile()">Ejecutar While (Hasta que salga un 6)</button>
+                        <button class="boton-bonito" style="background-color: #ff5555;" onclick="limpiarBucles()">Limpiar</button>
+
+                        <div id="resultado-bucles">
+                            > Esperando ejecución...
+                        </div>
+                    </div>
+                </section>
+            </div>
         
+        <div class="separate-container">
+            <section>
+                <h2>Arrays (Arreglos)</h2>
+                <p>
+                    Si una <strong>variable</strong> es una caja, un <strong>Array</strong> es una estantería entera o un tren con varios vagones. 
+                    En lugar de tener una variable para cada nombre de tu lista de amigos, guardas todos los nombres en una sola "estantería". 
+                    Lo único que debes recordar es que en programación empezamos a contar desde el <strong>0</strong>. ¡El primer vagón es el vagón 0!
+                </p>
+
+                <div class="interaccion-arrays">
+                    <input type="text" id="input-array" class="input-moderno" placeholder="Escribe un elemento...">
+                    <button class="boton-bonito" onclick="agregarAlArray()">Añadir al Tren</button>
+                    <button class="boton-bonito" onclick="quitarDelArray()">Quitar último</button>
+                    
+                    <div id="visualizacion-array" class="contenedor-consola">
+                        [ El tren está vacío ]
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="separate-container">
+            <section>
+                <h2>Programación Orientada a Objetos (POO)</h2>
+                <p>
+                    Imagina que tienes un <strong>molde para galletas</strong>. El molde no es la galleta, es el diseño (la <strong>Clase</strong>). 
+                    Cuando usas el molde para crear galletas reales, cada galleta es un <strong>Objeto</strong>. 
+                    Todas las galletas tienen la misma forma, pero una puede ser de chocolate y otra de vainilla (estos son sus <strong>atributos</strong>).
+                </p>
+
+                <div class="interaccion-poo">
+                    <button class="boton-bonito" onclick="crearObjeto('Perro')">Crear Perro</button>
+                    <button class="boton-bonito" onclick="crearObjeto('Gato')">Crear Gato</button>
+                    
+                    <div id="resultado-poo" class="contenedor-objetos">
+                        </div>
+                </div>
+            </section>
+        </div>
 
 
 

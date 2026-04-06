@@ -13,6 +13,15 @@ body{
     background-attachment: fixed;          
     margin: 0;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 header {
     background: linear-gradient(to bottom, #472824,  #735951);
@@ -126,9 +135,222 @@ header h1 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 
-footer{
-    margin: 5%;
-    padding: 2%;
+#contenedor-juego{
+    padding-left: 25px;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #3E2723;
+    color: #FDE4BC;
+    padding: 40px 10% 30px 10%;
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 8px solid #5C4033;
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.3);
+}
+
+footer div:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FDE4BC;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+footer div:last-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid #FDE4BC;
+    padding: 12px 28px;
+    border-radius: 4px;
+    background-color: #4B3621;
+    color: #FDE4BC;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+footer div:last-child:hover {
+    background-color: #FDE4BC;
+    color: #3E2723;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+
+
+#resultado-bucles{
+background: #222; color: #0f0;
+ padding: 15px;
+ margin-top: 15px;
+ border-radius: 8px;
+ min-height: 50px; 
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* --- Consola de Arrays --- */
+.contenedor-consola {
+    background-color: #f9f9f9; /* Un fondo neutro claro para que resalten los elementos */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: 2px dashed #FDE4BC; /* Borde punteado con el color del botón */
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Los elementos del Array ahora parecen mini-botones */
+.vagon {
+    background-color: #FDE4BC;
+    color: #333333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+}
+
+/* --- Tarjetas de Objetos (POO) --- */
+.contenedor-objetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tarjeta-objeto {
+    background-color: #FDE4BC; /* IGUAL AL BOTÓN */
+    color: #333333;           /* IGUAL AL BOTÓN */
+    padding: 16px;
+    border-radius: 8px;       /* IGUAL AL BOTÓN */
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* IGUAL AL BOTÓN */
+    width: 160px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Un pequeño efecto para que parezca que los objetos "cobran vida" */
+.tarjeta-objeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-objeto hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+/* Estilo para el input de texto para que no desentone */
+.input-moderno {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #FDE4BC;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Estilos para la tabla de "Base de Datos" */
+.tabla-scroll {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+#tabla-usuarios th {
+    background-color: #FDE4BC; /* Tu color de botones */
+    color: #333;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #edcfa4;
+}
+
+#tabla-usuarios td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+#tabla-usuarios tr:hover {
+    background-color: #fff9f0;
+}
+
+.controles-db {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* --- Estilos de Sistemas --- */
+.monitor-sistema {
+    background: #6f4609;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.recurso {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.barra-progreso {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.llenado {
+    background-color: #d19d4a;
+    height: 100%;
+    width: 0%; 
+    transition: width 0.5s ease-in-out;
+}
+
+
+.proceso-activo {
+    background-color: #6f370d;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.btn-cerrar {
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 10px;
 }
