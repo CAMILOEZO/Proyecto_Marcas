@@ -228,12 +228,12 @@ font-family: 'Courier New', Courier, monospace;
 }
 
 .tarjeta-objeto {
-    background-color: #FDE4BC; /* IGUAL AL BOTÓN */
-    color: #333333;           /* IGUAL AL BOTÓN */
+    background-color: #FDE4BC; 
+    color: #333333;           
     padding: 16px;
-    border-radius: 8px;       /* IGUAL AL BOTÓN */
+    border-radius: 8px;     
     font-size: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); /* IGUAL AL BOTÓN */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); 
     width: 160px;
     text-align: center;
     transition: all 0.3s ease;
@@ -277,7 +277,7 @@ font-family: 'Courier New', Courier, monospace;
 }
 
 #tabla-usuarios th {
-    background-color: #FDE4BC; /* Tu color de botones */
+    background-color: #FDE4BC; 
     color: #333;
     padding: 12px;
     text-align: left;
